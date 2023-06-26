@@ -1,0 +1,67 @@
+@import "config";
+@import "home";
+@import "menu";
+@import "about";
+@import "project";
+@import "contact";
+@import "responsive";
+
+body {
+    background-color: $primary-color;
+    color: set-textColor($primary-color);
+    height: 100vh;
+    font-family: $primary-font;
+    line-height: 1.1;
+
+}
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+a{
+    color: set-textColor($primary-color);
+
+}
+.text-secondary{
+    color: $secondary-color;
+}
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+    
+        .menu-nav-link{
+            // list-style-type: none;
+            text-decoration: none;
+        }
+}
+main {
+    height: 100%;
+    width: 100%;
+
+    .social-icons{
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+        a{
+            padding: 0.4rem;
+            @include transition;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom:  .4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-textColor($primary-color);
+}
