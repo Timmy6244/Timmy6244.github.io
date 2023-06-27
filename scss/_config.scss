@@ -12,7 +12,7 @@ $primary-font:  'Roboto Slab', serif;
 }
 
 @mixin transition{
-    transition: .5s ease-in-out;
+    transition: .5s ease-in;
 }
 
 @function set-textColor($color) {

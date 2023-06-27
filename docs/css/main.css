@@ -31,7 +31,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .menu-btn-burger {
   position: absolute;
@@ -40,7 +40,7 @@
   width: 24px;
   height: 3px;
   background: #fff;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .menu-btn-burger::before {
   content: "";
@@ -49,7 +49,7 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .menu-btn-burger::after {
   content: "";
@@ -58,7 +58,7 @@
   width: 20px;
   height: 3px;
   background: #fff;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .menu-btn-burger.open {
   transform: rotate(720deg);
@@ -93,7 +93,7 @@
   background: hsl(0, 6%, 19%);
   padding-right: 2rem;
   transform: translateY(-100%);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
@@ -101,7 +101,7 @@
 .nav .menu-nav-list {
   list-style-type: none;
   transform: translateX(100vw);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .nav .menu-nav-list.open {
   transform: translateX(0);
@@ -115,7 +115,7 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 200;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .nav .menu-nav-link:hover {
   color: #fc8625;
@@ -234,7 +234,7 @@
   width: 100%;
   opacity: 0;
   background: #fc8625;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .projects-list:hover::after {
   right: 0;
@@ -257,7 +257,7 @@
 .projects-btn {
   opacity: 0;
   color: #000;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 .projects-btn:hover {
   color: #fff;
@@ -385,7 +385,7 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in;
 }
 main .social-icons a:hover {
   color: #fc8625;
