@@ -10,7 +10,7 @@
   padding-top: 40vh;
   overflow: hidden;
   text-align: center;
-  background: linear-gradient(to right, rgba(51, 46, 46, 0.9), rgba(51, 46, 46, 0.3)), url(/images/item-11.jpg) no-repeat center/cover;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url(/images/item-11.jpg) no-repeat center/cover;
 }
 .home-name {
   font-size: 5rem;
@@ -19,8 +19,12 @@
   border-bottom: 2px solid #fff;
 }
 .home-name-last {
-  color: #fc8625;
+  color: #FFC0CB;
   font-weight: 700;
+}
+.home footer {
+  bottom: 0.55rem;
+  right: 0.5em;
 }
 
 .menu-btn {
@@ -90,7 +94,7 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: hsl(0, 6%, 19%);
+  background: #808080;
   padding-right: 2rem;
   transform: translateY(-100%);
   transition: 0.5s ease-in;
@@ -107,7 +111,7 @@
   transform: translateX(0);
 }
 .nav .menu-nav-list.active > a {
-  color: #fc8625;
+  color: #FFC0CB;
 }
 .nav .menu-nav-link {
   display: inline-block;
@@ -118,7 +122,7 @@
   transition: 0.5s ease-in;
 }
 .nav .menu-nav-link:hover {
-  color: #fc8625;
+  color: #FFC0CB;
 }
 
 .menu-nav-list:nth-child(1) {
@@ -143,7 +147,7 @@
 .about-bio-img {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(51, 46, 46, 0.85), rgba(51, 46, 46, 0.3)), url("/images/item-11.jpg");
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.85), rgba(128, 128, 128, 0.3)), url("/images/item-11.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -170,9 +174,9 @@
   gap: 2rem;
 }
 .about .jobs-jobs {
-  background: #4e4646;
+  background: #9a9a9a;
   padding: 0.5rem;
-  border-bottom: 5px solid #fc8625;
+  border-bottom: 5px solid #FFC0CB;
 }
 .about .jobs-jobs h2,
 .about .jobs-jobs h3 {
@@ -195,7 +199,7 @@
 .projects-bio-img {
   height: 60vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(51, 46, 46, 0.85), rgba(51, 46, 46, 0.3)), url("/images/item-11.jpg");
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.85), rgba(128, 128, 128, 0.3)), url("/images/item-11.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -217,13 +221,13 @@
 }
 .projects-list {
   position: relative;
-  border-bottom: 5px solid #fc8625;
+  border-bottom: 5px solid #FFC0CB;
   overflow: hidden;
   cursor: pointer;
 }
 .projects-list img {
   width: 100%;
-  height: 40vh;
+  height: 25vh;
 }
 .projects-list::after {
   content: "";
@@ -233,7 +237,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  background: #fc8625;
+  background: #FFC0CB;
   transition: 0.5s ease-in;
 }
 .projects-list:hover::after {
@@ -256,7 +260,7 @@
 }
 .projects-btn {
   opacity: 0;
-  color: #000;
+  color: #fff;
   transition: 0.5s ease-in;
 }
 .projects-btn:hover {
@@ -277,7 +281,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, rgba(51, 46, 46, 0.9), rgba(51, 46, 46, 0.3)), url(/images/item-11.jpg) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.3)), url(/images/item-11.jpg) no-repeat center center/cover;
 }
 .contact-list {
   display: grid;
@@ -289,8 +293,11 @@
   position: initial;
   margin-top: 2rem;
 }
+.contact footer {
+  bottom: 0.55rem;
+}
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation: portrait), only screen and (min-width: 768px) and (orientation: landscape) {
   .menu-btn {
     visibility: hidden;
   }
@@ -343,7 +350,7 @@
   }
 }
 body {
-  background-color: hsl(0, 6%, 19%);
+  background-color: #808080;
   color: #fff;
   height: 100vh;
   font-family: "Roboto Slab", serif;
@@ -361,7 +368,7 @@ a {
 }
 
 .text-secondary {
-  color: #fc8625;
+  color: #FFC0CB;
 }
 
 header {
@@ -388,13 +395,13 @@ main .social-icons a {
   transition: 0.5s ease-in;
 }
 main .social-icons a:hover {
-  color: #fc8625;
+  color: #FFC0CB;
 }
 
 footer {
   font-size: 1rem;
   position: fixed;
-  bottom: 0.4rem;
+  bottom: 2.5rem;
   right: 1rem;
   text-align: right;
   padding: 1rem;

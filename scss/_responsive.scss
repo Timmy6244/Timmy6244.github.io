@@ -28,7 +28,7 @@
     }
     .projects{
         &-bio-img{
-            height: 40vh
+            height: 40vh;
         }
         &-lists{
             grid-template-columns: repeat(2,1fr);

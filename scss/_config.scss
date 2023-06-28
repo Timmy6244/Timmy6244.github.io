@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-$primary-color: hsl(0, 6%, 19%);
-$secondary-color: #fc8625;
+$primary-color:  #808080;
+$secondary-color: #FFC0CB;
 $primary-font:  'Roboto Slab', serif;
 
 
@@ -17,16 +17,18 @@ $primary-font:  'Roboto Slab', serif;
 
 @function set-textColor($color) {
     @if (lightness($color) > 40%) {
-        @return #000;
-    } @else {
         @return #fff;
+    } @else {
+        @return #000;
     }
 }
 @mixin media-md {
-    @media screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (orientation: portrait),
+       only screen and (min-width: 768px) and (orientation: landscape) {
         @content;
-    }
+       }
 }
+
 @mixin media-lg {
     @media screen and (min-width: 1024px) {
         @content;
